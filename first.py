@@ -15,5 +15,13 @@ b= 100
 c= a
 a= b
 b= c
+e= complex(6,1) # complext datatype
 print(a)
 print(b)
+d= None
+print (d)
+#print(a+d)
+print(a+c)
+print(e)
+#type of variable
+print(type(d))

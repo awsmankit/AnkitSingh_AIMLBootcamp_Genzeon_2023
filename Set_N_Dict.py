@@ -21,7 +21,37 @@ print(s1)
 a={1,2,3,4}
 b={4,5,6,7}
 
+a.update([10,11,34])
+#difference
+c= a.difference(b)#only exist in a not in b
+print(c)
+e= b.difference(a) #only exist in b not in a
+print(e)
+g=a.difference_update(b)
+print(g)
+#intersection
+f= a.intersection(b) # returns that exist in both the set
+print(f)
 #union
-print(c=a.union(b))
+d=a.union(b)
+print(d)
+
+z=a.issubset(b)
+print(z)
 
 #Dictionary
+car =  {"brand":"ford",
+        "model":"mustang",
+        "year": 2005}
+x= car.get("model")
+print(x)
+y=car.items()
+print(y)
+z=car.keys()
+print(z)
+m = car.setdefault("model", "truck")
+print(m)
+n= car.values()
+print(n)
+
+
